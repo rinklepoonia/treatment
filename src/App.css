@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&display=swap");
+.font_Kaushan {
+  font-family: "Kaushan Script", sans-serif;
+}
+.font_Archivo {
+  font-family: "Archivo", sans-serif;
+}
+:root {
+  --fs-sm: 16px;
+  --fs-md: 18px;
+  --fs-2md: 25px;
+  --fs-lg: 28px;
+  --fs-xl: 38px;
+}
+.color_white {
+  color: #ffffff;
+}
+.color_lightGreen {
+  color: #6e9277;
+}
+.color_lightBlack {
+  color: #001008;
+}
+.color_lightBlack70 {
+  color: #4d5852;
+}
+.bg_lightGreen {
+  background: #6e9277;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ====font-size */
+.text-sm {
+  font-size: var(--fs-sm);
+}
+.text-md {
+  font-size: var(--fs-md);
+}
+.text-2md {
+  font-size: var(--fs-2md);
+}
+.text-lg {
+  font-size: var(--fs-lg);
+}
+.text-xl {
+  font-size: var(--fs-xl);
+}
+/* ====line-height===== */
+.leading_19 {
+  line-height: 19.58px;
+}
+.leading_24 {
+  line-height: 24px;
+}
+.leading_32 {
+  line-height: 32px;
+}
+.leading_36 {
+  line-height: 36px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ===font-weight======= */
+.fw-normal {
+  font-weight: 400 !important;
+}
+.fw-semibold {
+  font-weight: 600 !important;
+}
+.gap_40 {
+  gap: 40px;
+}
+
+.pb_30 {
+  padding-bottom: 30px;
+}
+.p_30 {
+  padding: 30px;
+}
+.max_w_510 {
+  max-width: 510px;
+}
+.max_w_348 {
+  max-width: 348px;
+}
+.max_w_387 {
+  max-width: 387px;
+}
+.btn_property {
+  padding: 16.35px 27.25px;
+  border: transparent;
+  border: 2px solid transparent;
+  transition: all 300ms linear;
+}
+.btn_property:hover {
+  background: transparent;
+  border: 2px solid #6e9277;
+  color: #6e9277;
+}
+.device_card {
+  border: 1.09px solid #0000001a;
+  max-width: 510px;
+  transition: all 300ms linear;
+  background: white;
+}
+.device_card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: #6e9277;
+  top: 50%;
+  margin-left: 15px;
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: #6e9277;
+  top: 50%;
+  margin-left: -70px;
+}
+.outerBox {
+  background: #f5f8f6;
+  padding: 40px;
+}
+
+.grow-1 {
+  flex-grow: 1 !important;
+}
+.pos_topLeaf {
+  top: 19%;
+  left: 4%;
+}
+.pos_bottmLeaf {
+  bottom: 14%;
+  left: 74%;
+}
+@media (min-width: 992px) {
+  :root {
+    --fs-lg: 32px;
+    --fs-xl: 48px;
+  }
+  .pb_lg_60 {
+    padding-bottom: 60px;
+  }
+  .leading_lg_62 {
+    line-height: 62.4px;
+  }
+}
+@media (min-width: 576px) {
+  :root {
+    --fs-lg: 20px;
+    --fs-xl: 30px;
+  }
+  .leading_sm_40 {
+    line-height: 40px;
+  }
+  .leading_sm_46 {
+    line-height: 46.43px;
+  }
+}
+@media (max-width: 991.99px) {
+  .flex_wrap {
+    flex-wrap: wrap;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 1400px) and (max-width: 1535.99px) {
+  .container {
+    max-width: 1140px !important;
   }
 }
+
+/* .main_outerBox {
+  background-color: white;
+  padding: 42px 150px;
+} */
