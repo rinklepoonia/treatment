@@ -138,18 +138,7 @@
   bottom: 14%;
   left: 74%;
 }
-@media (min-width: 992px) {
-  :root {
-    --fs-lg: 32px;
-    --fs-xl: 48px;
-  }
-  .pb_lg_60 {
-    padding-bottom: 60px;
-  }
-  .leading_lg_62 {
-    line-height: 62.4px;
-  }
-}
+
 @media (min-width: 576px) {
   :root {
     --fs-lg: 20px;
@@ -160,6 +149,18 @@
   }
   .leading_sm_46 {
     line-height: 46.43px;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --fs-lg: 32px;
+    --fs-xl: 48px;
+  }
+  .pb_lg_60 {
+    padding-bottom: 60px;
+  }
+  .leading_lg_62 {
+    line-height: 62.4px;
   }
 }
 @media (max-width: 991.99px) {
@@ -173,8 +174,3 @@
     max-width: 1140px !important;
   }
 }
-
-/* .main_outerBox {
-  background-color: white;
-  padding: 42px 150px;
-} */

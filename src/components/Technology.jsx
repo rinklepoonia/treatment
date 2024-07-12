@@ -20,7 +20,7 @@ function Technology() {
               <h1 className="font_Kaushan fw-normal text-lg color_lightGreen leading_sm_46 leading_32 text-center underline position-relative">
                 Cutting Edge Technology
               </h1>
-              <h2 className="font_Archivo fw-semibold text-xl  leading_lg_62 leading_sm_40 leading_36 color_lightBlack text-center pb_lg_60 pb_30 mb-0">
+              <h2 className="font_Archivo fw-semibold text-xl leading_lg_62 leading_sm_40 leading_36 color_lightBlack text-center pb_lg_60 pb_30 mb-0">
                 Devices and Treatments to meet
                 <span className="d-lg-block"> your needs</span>
               </h2>
